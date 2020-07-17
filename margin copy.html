@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>마진(margin)</title>
+  <style>
+    body{background-color:#f0f0f0;margin:0;}
+    .wrapper{
+      width: 600px;
+      margin:0 auto;}
+    .wrapper>div{
+      margin:10px 0;
+      background-color: white;
+      padding: 20px;}
+    .wrapper>.logo,.wrapper>.search,.wrapper>.menu,.wrapper>.footer{
+      background-color: transparent;}
+    .logo{
+      font-weight: bolder;
+      font-size: 50px;
+      color: #03c75a;
+      text-align: center;
+      }
+    input{
+      border-radius:32px;
+      width:560px;
+      height:60px;
+      margin:0 auto;
+      border: 2px solid #03c75a;
+      }
+    .menu{
+      text-align:center;
+      padding-bottom:100px !important
+      }
+    .menu>span{
+      display: inline-block;
+      width: 100px;
+      height: 100px;
+      margin: 10px;
+      background-color:white;
+      border-radius:40px
+      }
+    .stock_left{float: left;font-weight: bolder;}
+    .stock_right{float: right;}
+    .toon{clear: both;}
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="logo">NAVER</div>
+    <div class="search">
+      <input type="text">
+    </div>
+    <div class="menu">
+      <span>1</span>
+      <span>2</span>
+      <span>3</span>
+      <span>4</span>
+      <br>
+      <span>5</span>
+      <span>6</span>
+      <span>7</span>
+      <span>8</span>
+    </div>
+    <div class="banner">배너</div>
+    <div class="weather">날씨</div>
+    <div class="app">앱</div>
+    <div class="stock">
+      <div class="stock_left">증권</div>
+      <div class="stock_right">dk</div>
+    </div>
+    <div class="toon">웹툰</div>
+    <div class="best">인기</div>
+    <div class="footer">끝</div>
+  </div>
+</body>
+</html>

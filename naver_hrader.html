@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+  <title>NAVER</title>
+  <style>
+    .header_top_left{float:left;}
+    /* float을 쓰게되면 인라인 블록 속성으로 바꿔주어 굳이 display:인라인블록 안써도됨 */
+    .header_bottom{clear:both}
+    ul{list-style: none;padding-left:0 ;}
+    li{width: 23px;height: 1px;background-color: #333333;}
+    .line02{margin: 7px 0; width: 18px;}
+
+    .header_top_right{float:right;
+    height: 40px;width: 40px;background-color: #cccccc;border-radius:20px;
+    text-align: center;} 
+    .circle{width: 20px;height: 20px;border-radius: 10px;background-color: black;
+    display: inline-block;}
+    p{
+      text-align: center;font-size: 50px;font-weight:bolder;color:#03c75a
+    }
+  </style>
+</head>
+<body>
+  <div class="header_top">
+    <div class="header_top_left">
+      <ul>
+        <li class="line01"></li>
+        <li class="line02"></li>
+        <li class="line03"></li>
+      </ul>
+    </div>
+    <div class="header_top_right">
+      <div class="circle"></div>
+    </div>
+
+  </div>
+  <div class="header_bottom">
+    <p>NAVER</p> 
+  </div>
+</body>
+</html>
